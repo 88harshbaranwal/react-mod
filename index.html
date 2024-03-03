@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postal-Pincode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="pincodeForm">
+        <label for="pincodeInput" class="heading1">Enter Pincode</label><br>
+        <input type="text" id="pincodeInput" name="pincodeInput" maxlength="6" pattern="[0-9]{6}" placeholder="Pincode"><br><br>
+        <button type="submit">Lookup</button>
+    </form>
+    <input type="text" id="filterInput" placeholder="Filter by post office name...">
+    <div id="loader"></div>
+    <div id="pincodeDetails"></div>
+    <script src="../src/index.js"></script>
+</body>
+</html>
